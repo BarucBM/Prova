@@ -1,9 +1,10 @@
-import Sistema.Sistema;
-
 public class Main {
     public static void main(String[] args) {
-        Sistema sistema = new Sistema();
+        Verificador test = new Verificador();
 
-        sistema.start();
+        System.out.println(test.verificarFinalString("programação", "ão"));
+        System.out.println(test.verificarFinalString("olá", "mundo"));
+        System.out.println(test.verificarFinalString("", "abc"));
+        System.out.println(test.verificarFinalString("hellO", "lo"));
     }
 }
